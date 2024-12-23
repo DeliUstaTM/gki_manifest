@@ -2,6 +2,7 @@
 <manifest>
   <remote  name="aosp" fetch="https://android.googlesource.com" review="https://android-review.googlesource.com/" />
   <remote  name="github" fetch="https://github.com/ambatubash69" />
+  <remote  name="githubb" fetch="https://github.com/DeliUstaTM" />
   <default revision="master-kernel-build-2021" remote="aosp" sync-j="4" />
   
   <superproject name="kernel/superproject" remote="aosp" revision="common-android12-5.10-lts" />
@@ -17,5 +18,5 @@
   <project path="prebuilts/tradefed" name="platform/tools/tradefederation/prebuilts" revision="main" clone-depth="1" />
   <project path="prebuilts/asuite" name="platform/prebuilts/asuite" revision="main" clone-depth="1" />
   <project path="tools/mkbootimg" name="platform/system/tools/mkbootimg" />
-  <project path="common" name="v1llx-gki-5.10" revision="vilhazze-new" clone-depth="1" remote="github" />
+  <project path="common" name="v1llx-gki-5.10" revision="vilhazze-new" clone-depth="1" remote="githubb" />
 </manifest>
